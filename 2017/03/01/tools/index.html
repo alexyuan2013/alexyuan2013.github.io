@@ -6,14 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/alexyuan2013">
-  <title>Archives: 2017/3 | Alex Yuan的博客</title>
+  <title>关于开发工具的使用 | Alex Yuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Alex Yuan的博客">
-<meta property="og:url" content="https://github.com/alexyuan2013/archives/2017/03/index.html">
+  <meta name="description" content="2016-05-28 Chrome调试Android应用功能
+
+缘起为Ionic项目调试过程中，由于存在一些Cordova插件，需要调用原生的API，因此只能在真机上测试。但是，一旦出现bug，调试过程相对于浏览器调试，就显得将异常繁琐，只能用alert函数打印相关信息。
+然后，也就是一直这样调试下去，也没人去探索一个更便捷的方式，直到有人发现了Chrome浏览器居然有这样的功能。而且操作很简单">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于开发工具的使用">
+<meta property="og:url" content="https://github.com/alexyuan2013/2017/03/01/tools/index.html">
 <meta property="og:site_name" content="Alex Yuan的博客">
+<meta property="og:description" content="2016-05-28 Chrome调试Android应用功能
+
+缘起为Ionic项目调试过程中，由于存在一些Cordova插件，需要调用原生的API，因此只能在真机上测试。但是，一旦出现bug，调试过程相对于浏览器调试，就显得将异常繁琐，只能用alert函数打印相关信息。
+然后，也就是一直这样调试下去，也没人去探索一个更便捷的方式，直到有人发现了Chrome浏览器居然有这样的功能。而且操作很简单">
+<meta property="og:image" content="http://blog.httpwatch.com/wp-content/uploads/2013/12/email_cert.png">
+<meta property="og:image" content="http://blog.httpwatch.com/wp-content/uploads/2013/12/trusted_cert.png">
+<meta property="og:updated_time" content="2017-03-01T08:14:03.875Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alex Yuan的博客">
+<meta name="twitter:title" content="关于开发工具的使用">
+<meta name="twitter:description" content="2016-05-28 Chrome调试Android应用功能
+
+缘起为Ionic项目调试过程中，由于存在一些Cordova插件，需要调用原生的API，因此只能在真机上测试。但是，一旦出现bug，调试过程相对于浏览器调试，就显得将异常繁琐，只能用alert函数打印相关信息。
+然后，也就是一直这样调试下去，也没人去探索一个更便捷的方式，直到有人发现了Chrome浏览器居然有这样的功能。而且操作很简单">
+<meta name="twitter:image" content="http://blog.httpwatch.com/wp-content/uploads/2013/12/email_cert.png">
   
     <link rel="alternative" href="/atom.xml" title="Alex Yuan的博客" type="application/atom+xml">
   
@@ -153,36 +169,85 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-tools" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/01/tools/" class="archive-article-date">
-  	<time datetime="2017-03-01T08:12:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/01/tools/">关于开发工具的使用</a>
+    <h1 class="article-title" itemprop="name">
+      关于开发工具的使用
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/01/tools/" class="archive-article-date">
+  	<time datetime="2017-03-01T08:12:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>2016-05-28 Chrome调试Android应用功能</li>
+</ul>
+<p>缘起为Ionic项目调试过程中，由于存在一些Cordova插件，需要调用原生的API，因此只能在真机上测试。但是，一旦出现bug，调试过程相对于浏览器调试，<br>就显得将异常繁琐，只能用alert函数打印相关信息。</p>
+<p>然后，也就是一直这样调试下去，也没人去探索一个更便捷的方式，直到有人发现了Chrome浏览器居然有这样的功能。而且操作很简单，在Chrome浏览器中输入：<br><code>chrome://inspect</code>即可，同时手机端在开发者模式中，设置调试应用，这样就可以将手机端应用的调试信息投射到Chrome浏览器中，同时还是实现了操作的相互性，<br>断点设置，调试信息完全和浏览器端一致，很给力的工具。官方文档在<a href="https://developers.google.com/web/tools/chrome-devtools/debug/remote-debugging/remote-debugging?hl=en" target="_blank" rel="external">这里</a>。</p>
+<ul>
+<li>2016-08-18 移动端https自签名证书的导入</li>
+</ul>
+<p>项目需要将http接口全部转为https的接口，首选要用自签名的证书去测试，在pc端是没有问题的，只要在浏览器中导入自签名的证书即可。<br>而到移动端，android和ios系统实际上是从系统层面上加入了https的签名证书，这些证书都是预置在系统中的可信任机构办法的。<br>对于自签名的证书，要想进行测试，就需要将其导入到系统的证书中去。</p>
+<h3 id="向android系统添加自签名证书"><a href="#向android系统添加自签名证书" class="headerlink" title="向android系统添加自签名证书"></a>向android系统添加自签名证书</h3><ul>
+<li>Open Firefox (I suppose it’s also possible with Chrome, but it’s easier for me with FF)</li>
+<li>Visit your development site with a self-signed SSL certificate.</li>
+<li>Click on the certificate (next to the site name)</li>
+<li>Click on “More information”</li>
+<li>Click on “View certificate”</li>
+<li>Click on “Details”</li>
+<li>Click on “Export…”</li>
+<li>Choose “X.509 Certificate whith chain (PEM)”, select the folder and name to save it and click “Save”</li>
+<li>Copy the .crt file to the root of the /sdcard folder inside your Android device</li>
+<li>Inside your Android device, Settings &gt; Security &gt; Install from storage. It should detect the certificate and let you add it to the device</li>
+<li>Browse to your development site. The first time it should ask you to confirm the security exception. That’s all. The certificate should work with any browser installed on your Android (Browser, Chrome, Opera, Dolphin…)</li>
+</ul>
+<p>就是将自签名的证书拷贝到android系统的更目录，然后到设置/安全/从SD卡安装证书（国产定制系统中可能在更多设置中寻找）即可。</p>
+<p>参考：<a href="https://coderwall.com/p/wv6fpq/add-self-signed-ssl-certificate-to-android-for-browsing" target="_blank" rel="external">Add self signed SSL certificate to Android</a></p>
+<h3 id="向ios系统添加自签名证书"><a href="#向ios系统添加自签名证书" class="headerlink" title="向ios系统添加自签名证书"></a>向ios系统添加自签名证书</h3><p>You can add an SSL certificate to the trusted list in iOS by simply emailing the file to yourself as an attachment:<br><img src="http://blog.httpwatch.com/wp-content/uploads/2013/12/email_cert.png" alt=""></p>
+<p>Then select Install to add the certificate. Once you’ve done this you use the certificate without warnings in Safari or other iOS apps that use the device’s keychain..</p>
+<p>Also unlike Safari SSL exceptions, you can access the certificate at any time in Settings-&gt;General-&gt;Profiles and remove it if required:</p>
+<p><img src="http://blog.httpwatch.com/wp-content/uploads/2013/12/trusted_cert.png" alt=""></p>
+<p>Apple provides an iPhone configuration utility for Mac and PC that can also install certificates. This would be a better option where email is not available or you have a larger number of iOS devices to manage.</p>
+<p>参考：<a href="https://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/" target="_blank" rel="external">Five Tips for Using Self Signed SSL Certificates with iOS</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,46 +259,88 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://github.com/alexyuan2013/2017/03/01/tools/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/01/hello-world/" class="archive-article-date">
-  	<time datetime="2017-03-01T06:54:02.231Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-01</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/01/hello-world/">Hello World</a>
-    </h1>
+  
+    <a href="/2017/03/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -256,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
